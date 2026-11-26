@@ -2,22 +2,17 @@
 <html lang="pt-BR">
 <head>
  <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Calculadora JavaScript</title>
- <link rel="stylesheet" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Calculadora de média</title>
+ <script src="script.js" defer></script>
 </head>
 <body>
- <main class="container">
- <h1>Calculadora JavaScript</h1>
- <label for="numero1">Primeiro número:</label>
- <input type="number" id="numero1" placeholder="Digite um número">
- <label for="numero2">Segundo número:</label>
- <input type="number" id="numero2" placeholder="Digite um número">
- <button id="btnCalcular">Calcular</button>
- <section id="resultado" aria-live="polite">
- Os resultados aparecerão aqui.
- </section>
- </main>
- <script src="script.js"></script>
+ <h1>Calculadora de média</h1>
+ <label for="n1">Nota 1</label><input id="n1" type="number" min="0" max="10" step="0.1">
+ <label for="n2">Nota 2</label><input id="n2" type="number" min="0" max="10" step="0.1">
+ <label for="n3">Nota 3</label><input id="n3" type="number" min="0" max="10" step="0.1">
+ <button id="calcular" type="button">Calcular</button>
+ <p id="resultado" role="status" aria-live="polite"></p>
 </body>
 </html>
+
